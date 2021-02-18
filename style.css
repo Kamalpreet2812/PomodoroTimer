@@ -1,0 +1,113 @@
+body{
+    background-color: burlywood;
+    display: flex;
+}
+#outer{
+background-color: #a55c1b;
+background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+    padding: 10px;
+    margin: auto;
+    width: 200px;
+    border-radius:10px;
+    box-shadow: 0 0 8px 1px; 
+    
+    
+}
+#btime{
+    display: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+    margin: auto;
+}
+#inner1{
+background-image: linear-gradient(315deg,cyan 0%, #000000 74%);
+    padding: 10px;
+    margin: auto; 
+    width:auto;
+    box-shadow: 2px 2px 2px 2px black ;
+    /* border-radius: 100%; */
+
+}
+.spin1
+{
+        animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes spin {
+    100%{
+  background-position-y: 300px;
+     background-position-x: 300px;
+    }
+}
+#inner2{
+    background: rgb(236, 236, 227);
+    padding:10px;
+    margin: auto; 
+    width:auto;
+    height:25%; 
+    display: flex;
+    /* border-radius: 100%; */
+}
+button{
+    color: whitesmoke;
+background-color: #a55c1b;
+background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+    border: none;
+    box-shadow: 0 0 1px 1px rgb(97, 74, 74);
+    
+}
+p{
+    text-align: center;
+    color: whitesmoke;
+    
+}
+#time{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: cyan;
+    margin: auto;
+    text-shadow: 2px 2px 2px black;
+}
+#b2{
+    text-align: center;
+}
+table,tr{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+#pause,#reset,#start,#resume
+{
+    padding: 10px;
+    width:80px;
+} 
+#pause,#resume{
+    display: none;
+}
+button:hover
+{
+     transition-duration: 2s;
+    box-shadow: 0 0 8px 1px gray; 
+     background-position: right center;
+     /* transform: rotate(20deg); */
+     border-radius: 40px;
+     background-position-y: 30px;
+     background-position-x: 30px;
+    cursor: grab;
+    transform: scale(1.1);
+    
+}
+#outer:hover
+{ transition-timing-function: linear;
+     transition-duration: 2s;
+    box-shadow: 0 0 8px 1px gray; 
+     background-position: right center;
+     
+     background-position-y: 30px;
+     background-position-x: 30px;
+    cursor: grab;
+}
